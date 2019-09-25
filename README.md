@@ -7,7 +7,7 @@
 
 Configure Umbraco Examine indexes from the web.config!
 
-Previously in Umbraco 7 Examine indexes were configured via the friendly `examineIndexes.config` and `examineSettings.config` files. In Umbraco 8 this configuration has moved into code, making it more difficult to configure indexes as desired. This project aims to replicate many of the helpful features of the Umbraco 7 Examine config files within Umbraco 8.
+In Umbraco 7 Examine indexes were configured via the friendly `ExamineIndexes.config` and `ExamineSettings.config` files. However in Umbraco 8 this configuration has moved into code, perhaps making it more difficult to configure indexes as desired. This project aims to replicate many of the helpful features of the Umbraco 7 Examine config files within Umbraco 8.
 
 ## Getting started
 
@@ -26,6 +26,23 @@ You can find a downloadable package, along with a discussion forum for this pack
 To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.ExamineConfig/), run the following command in your instance of Visual Studio.
 
     PM> Install-Package Our.Umbraco.ExamineConfig
+
+## Usage
+
+The package can be used to configure settings for the "Internal", "External" and "Media" Examine indexes in Umbraco.
+
+It is possible to configure the following settings per index:
+
+| Name                    | Type    | Default    |
+|-------------------------|---------|------------|
+| ParentId                | Integer | `-1`       |
+| IncludeItemTypes        | Array   | Everything |
+| ExcludeItemTypes        | Array   | Nothing    |
+| SupportProtectedContent | Boolean | `false`    |
+
+Settings are configured within the appsettings section of your `web.config` file for your Umbraco install. Appsetting names follow a convention of: `Umbraco.Examine.{INDEX-NAME}.{SETTING-NAME}`.
+
+For example, to enable `SupportProtectedContent` for the "External" the name would be `Umbraco.Examine.ExternalIndex.SupportProtectedContent`.
 
 ## Contribution guidelines
 
