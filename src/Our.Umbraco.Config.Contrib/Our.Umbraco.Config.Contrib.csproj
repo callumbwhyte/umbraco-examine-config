@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Version Condition="'$(BUILD_BUILDNUMBER)' == ''">1.0.0.0</Version>
+    <Version Condition="'$(BUILD_BUILDNUMBER)' != ''">$(BUILD_BUILDNUMBER)</Version>
+    <Description>Configure hard-to-reach parts of Umbraco in a friendly way</Description>
+    <Authors>Callum Whyte</Authors>
+    <Copyright>Copyright © 2019 Callum Whyte, and other contributors</Copyright>
+    <PackageLicenseUrl>https://github.com/callumbwhyte/umbraco-config-contrib/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/callumbwhyte/umbraco-config-contrib</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/callumbwhyte/umbraco-config-contrib/master/docs/img/logo.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/callumbwhyte/umbraco-config-contrib</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Umbraco Examine Lucene</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="UmbracoCms.Core" Version="8.1.0" />
+    <PackageReference Include="UmbracoCms.Web" Version="8.1.0" />
+  </ItemGroup>
+</Project>
