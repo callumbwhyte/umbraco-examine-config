@@ -31,8 +31,6 @@ To raise a new bug, create an issue on the GitHub repository. To fix a bug or ad
 
 This project is maintained by [Callum Whyte](https://callumwhyte.com/) and contributors. If you have any questions about the project please get in touch on [Twitter](https://twitter.com/callumbwhyte), or by raising an issue on GitHub.
 
-* [Robert Foster](https://twitter.com/robertjf72)
-
 ## License
 
 Copyright &copy; 2019 [Callum Whyte](https://callumwhyte.com/), and other contributors
