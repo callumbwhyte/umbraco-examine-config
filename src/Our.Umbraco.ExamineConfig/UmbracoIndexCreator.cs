@@ -1,17 +1,18 @@
 ﻿using Examine;
+using Our.Umbraco.ExamineConfig.Configuration;
 using Umbraco.Core.Logging;
 using Umbraco.Core.Services;
 using Umbraco.Examine;
 using Umbraco.Web.Search;
 using UmbracoIndexes = Umbraco.Core.Constants.UmbracoIndexes;
 
-namespace Our.Umbraco.Config.Contrib.Examine
+namespace Our.Umbraco.ExamineConfig
 {
-    public class ConfigIndexesCreator : UmbracoIndexesCreator
+    public class UmbracoIndexCreator : UmbracoIndexesCreator
     {
         private readonly IPublicAccessService _publicAccessService;
 
-        public ConfigIndexesCreator(IProfilingLogger profilingLogger, ILocalizationService languageService, IPublicAccessService publicAccessService, IMemberService memberService)
+        public UmbracoIndexCreator(IProfilingLogger profilingLogger, ILocalizationService languageService, IPublicAccessService publicAccessService, IMemberService memberService)
             : base(profilingLogger, languageService, publicAccessService, memberService)
         {
             _publicAccessService = publicAccessService;
@@ -26,7 +27,9 @@ namespace Our.Umbraco.Config.Contrib.Examine
 
         public override IValueSetValidator GetMemberValueSetValidator()
         {
-            return base.GetMemberValueSetValidator();
+            var config = new ExamineIndexConfig(UmbracoIndexes.MembersIndexName);
+
+            return new MemberValueSetValidator(config.IncludeItemTypes, config.ExcludeItemTypes);
         }
 
         public override IContentValueSetValidator GetPublishedContentValueSetValidator()

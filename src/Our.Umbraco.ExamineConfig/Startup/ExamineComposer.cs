@@ -1,16 +1,15 @@
-﻿using Our.Umbraco.Config.Contrib.Examine;
-using Umbraco.Core;
+﻿using Umbraco.Core;
 using Umbraco.Core.Composing;
 using Umbraco.Web.Search;
 
-namespace Our.Umbraco.Config.Contrib.Startup
+namespace Our.Umbraco.ExamineConfig.Startup
 {
     [ComposeAfter(typeof(ExamineComposer))]
     public class ExamineConfigComposer : IUserComposer
     {
         public void Compose(Composition composition)
         {
-            composition.RegisterUnique<IUmbracoIndexesCreator, ConfigIndexesCreator>();
+            composition.RegisterUnique<IUmbracoIndexesCreator, UmbracoIndexCreator>();
         }
     }
 }

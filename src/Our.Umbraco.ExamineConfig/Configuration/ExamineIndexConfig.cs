@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Our.Umbraco.ExamineConfig.Helpers;
 
-namespace Our.Umbraco.Config.Contrib.Examine
+namespace Our.Umbraco.ExamineConfig.Configuration
 {
     public class ExamineIndexConfig
     {

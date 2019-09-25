@@ -1,9 +1,9 @@
-# Umbraco Config Contrib
+# Umbraco Examine Config
 
-[![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.Config.Contrib.svg)](https://www.nuget.org/packages/Our.Umbraco.Config.Contrib/)
-[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.com/projects/developer-tools/config-contrib/)
+[![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.ExamineConfig.svg)](https://www.nuget.org/packages/Our.Umbraco.ExamineConfig/)
+[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.com/projects/developer-tools/examine-config/)
 
-Configure hard-to-reach parts of Umbraco in a friendly way!
+Configure Umbraco Examine indexes from the web.config!
 
 ## Getting started
 
@@ -15,13 +15,13 @@ The package is available from Our Umbraco, NuGet, or as a manual download direct
 
 #### Our Umbraco repository
 
-You can find a downloadable package, along with a discussion forum for this package, on the [Our Umbraco](https://our.umbraco.com/projects/developer-tools/config-contrib/) site.
+You can find a downloadable package, along with a discussion forum for this package, on the [Our Umbraco](https://our.umbraco.com/projects/developer-tools/examine-config/) site.
 
 #### NuGet package repository
 
-To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.Config.Contrib/), run the following command in your instance of Visual Studio.
+To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.ExamineConfig/), run the following command in your instance of Visual Studio.
 
-    PM> Install-Package Our.Umbraco.Config.Contrib
+    PM> Install-Package Our.Umbraco.ExamineConfig
 
 ## Contribution guidelines
 

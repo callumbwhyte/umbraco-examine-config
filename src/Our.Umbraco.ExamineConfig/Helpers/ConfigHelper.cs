@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Configuration;
 
-namespace Our.Umbraco.Config.Contrib
+namespace Our.Umbraco.ExamineConfig.Helpers
 {
-    public static class ConfigHelper
+    internal static class ConfigHelper
     {
         private const string ExaminePrefix = "Umbraco.Examine";
 
@@ -33,7 +33,7 @@ namespace Our.Umbraco.Config.Contrib
 
         public static string[] ExcludeItemTypes(string indexName)
         {
-            var excludeItemTypes = ConfigurationManager.AppSettings[ExaminePrefix + "." + indexName + ".ExcliudeItemTypes"];
+            var excludeItemTypes = ConfigurationManager.AppSettings[ExaminePrefix + "." + indexName + ".ExcludeItemTypes"];
 
             if (string.IsNullOrWhiteSpace(excludeItemTypes) == false)
             {
