@@ -7,6 +7,8 @@
 
 Configure Umbraco Examine indexes from the web.config!
 
+Previously in Umbraco 7 Examine indexes were configured via the friendly `examineIndexes.config` and `examineSettings.config` files. In Umbraco 8 this configuration has moved into code, making it more difficult to configure indexes as desired. This project aims to replicate many of the helpful features of the Umbraco 7 Examine config files within Umbraco 8.
+
 ## Getting started
 
 This package is supported on Umbraco 8.1+.
