@@ -12,8 +12,8 @@ namespace Our.Umbraco.ExamineConfig
     {
         private readonly IPublicAccessService _publicAccessService;
 
-        public UmbracoIndexCreator(IProfilingLogger profilingLogger, ILocalizationService languageService, IPublicAccessService publicAccessService, IMemberService memberService)
-            : base(profilingLogger, languageService, publicAccessService, memberService)
+        public UmbracoIndexCreator(IProfilingLogger profilingLogger, ILocalizationService languageService, IPublicAccessService publicAccessService, IMemberService memberService,IUmbracoIndexConfig indexConfig)
+            : base(profilingLogger, languageService, publicAccessService, memberService,indexConfig)
         {
             _publicAccessService = publicAccessService;
         }
