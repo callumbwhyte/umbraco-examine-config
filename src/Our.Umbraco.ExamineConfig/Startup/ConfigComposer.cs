@@ -2,8 +2,10 @@
 using System.Configuration;
 using Examine.Config;
 using Our.Umbraco.ExamineConfig.Composing;
+using Umbraco.Core;
 using Umbraco.Core.Composing;
 using Umbraco.Web.Search;
+using UmbracoExamine = Umbraco.Examine;
 
 namespace Our.Umbraco.ExamineConfig.Startup
 {
@@ -13,6 +15,8 @@ namespace Our.Umbraco.ExamineConfig.Startup
         public void Compose(Composition composition)
         {
             RegisterConfig(composition);
+
+            composition.RegisterUnique<UmbracoExamine.IUmbracoIndexConfig, CoreIndexConfig>();
         }
 
         private void RegisterConfig(Composition composition)
