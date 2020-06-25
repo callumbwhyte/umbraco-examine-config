@@ -17,6 +17,8 @@ namespace Our.Umbraco.ExamineConfig.Startup
             RegisterConfig(composition);
 
             composition.RegisterUnique<UmbracoExamine.IUmbracoIndexConfig, CoreIndexConfig>();
+
+            composition.Components().Append<ConfigComponent>();
         }
 
         private void RegisterConfig(Composition composition)

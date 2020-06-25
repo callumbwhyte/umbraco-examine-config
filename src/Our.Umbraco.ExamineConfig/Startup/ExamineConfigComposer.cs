@@ -1,6 +1,7 @@
 ﻿using Examine.Config;
 using Examine.Config.Helpers;
 using Our.Umbraco.ExamineConfig.Composing;
+using Our.Umbraco.ExamineConfig.Helpers;
 using Umbraco.Core;
 using Umbraco.Core.Composing;
 
@@ -15,6 +16,8 @@ namespace Our.Umbraco.ExamineConfig.Startup
             composition.Register<SearcherCollection>();
 
             composition.RegisterUnique<IExamineHelper, ExamineHelper>();
+
+            composition.RegisterUnique<ValueSetHelper>();
         }
     }
 }
