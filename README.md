@@ -13,6 +13,8 @@ In Umbraco 7 Examine was configured via the friendly `ExamineIndexes.config` and
 
 This package is supported on Umbraco 8.4+.
 
+Most of the core functionality is provided by [Examine.Config](https://github.com/callumbwhyte/examine-config), with some Umbraco specific options sprinkled on top.
+
 ### Installation
 
 The package is available from Our Umbraco, NuGet, or as a manual download directly from GitHub.
