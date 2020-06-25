@@ -5,9 +5,9 @@
 [![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.ExamineConfig.svg)](https://www.nuget.org/packages/Our.Umbraco.ExamineConfig/)
 [![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.com/projects/developer-tools/examine-config/)
 
-Configure Umbraco Examine indexes from the web.config!
+The simplest way to configure Examine in Umbraco 8!
 
-In Umbraco 7 Examine indexes were configured via the friendly `ExamineIndexes.config` and `ExamineSettings.config` files. However in Umbraco 8 this configuration has moved into code, perhaps making it more difficult to configure indexes as desired. This project aims to replicate many of the helpful features of the Umbraco 7 Examine config files within Umbraco 8.
+In Umbraco 7 Examine was configured via the friendly `ExamineIndexes.config` and `ExamineSettings.config` config files. However in Umbraco 8 this configuration has moved into code, making it more difficult to configure Examine as desired. This project aims to replicate many of the helpful features of the Umbraco 7 Examine config files within Umbraco 8.
 
 ## Getting started
 
@@ -58,6 +58,6 @@ The package logo uses the [Search](https://thenounproject.com/term/search/207753
 
 ## License
 
-Copyright &copy; 2019 [Callum Whyte](https://callumwhyte.com/), and other contributors
+Copyright &copy; 2020 [Callum Whyte](https://callumwhyte.com/), and other contributors
 
 Licensed under the [MIT License](LICENSE.md).
