@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections>
+    <!-- Replace Examine section -->
+    <section name="examine"
+             type="Our.Umbraco.ExamineConfig.Configuration.ExamineConfig, Our.Umbraco.ExamineConfig"
+             xdt:Locator="Match(name)"
+             xdt:Transform="SetAttributes(type)" />
+  </configSections>
+</configuration>
