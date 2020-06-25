@@ -11,7 +11,7 @@ In Umbraco 7 Examine was configured via the friendly `ExamineIndexes.config` and
 
 ## Getting started
 
-This package is supported on Umbraco 8.1+.
+This package is supported on Umbraco 8.4+.
 
 ### Installation
 

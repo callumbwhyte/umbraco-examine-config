@@ -15,7 +15,6 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="UmbracoCms.Core" Version="8.1.0" />
-    <PackageReference Include="UmbracoCms.Web" Version="8.1.0" />
+    <PackageReference Include="UmbracoCms.Web" Version="8.4.0" />
   </ItemGroup>
 </Project>
